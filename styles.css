@@ -1,0 +1,235 @@
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* Estilo general para el header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white; /* Color de fondo del header */
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos en los extremos */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho máximo para una mejor apariencia */
+    margin: 0 auto; /* Centra el contenido del header */
+    padding: 0;
+}
+
+.header-title {
+    font-size: 1.2em;
+    color: #CEA3CC;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px; /* Espacio a la izquierda del título */
+    line-height: 1;
+}
+
+nav {
+    margin-right: 20px; /* Espacio a la derecha del menú */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Espacio entre los elementos del menú */
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: #CEA3CC;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 0;
+    line-height: 1; 
+}
+
+/* Efecto cuando se pasa el ratón por encima */
+.menu a:hover {
+    color:#000; /* Cambia a un color diferente al pasar el mouse */
+}
+
+/* Efecto cuando el enlace está activo o se selecciona */
+.menu a:focus, .menu a:active {
+    color: #000; /* Cambia el color cuando el enlace está activo o enfocado */
+}
+
+.section {
+    min-height: 100vh;
+    padding: 80px 20px; /* Aumentamos el padding para dar espacio al menú fijo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#inicio {
+    background: #CEA3CC;
+    color: white;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Coloca la imagen y el texto en columna */
+    height: 100vh; /* Ocupa toda la pantalla */
+    text-align: center; /* Asegura que todo el contenido esté centrado */
+}
+
+/* Estilos para la imagen del logo */
+.logo-imagen {
+    max-width: 350px; /* Ajusta el ancho máximo de la imagen */
+    width: 100%; /* Asegura que la imagen sea responsiva */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 25px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos para el texto */
+#inicio h1 {
+    font-size: 5 em;
+    color: #ffffff;
+}
+
+p {
+        text-align: center; /* Centrar el texto */
+}
+
+
+#portfolio {
+    background: #CB0F4E;
+    color: white;
+}
+
+/* Estilos para la sección de portfolio */
+#portfolio {
+    padding: 40px;
+    text-align: center; /* Centrar el texto */
+}
+
+/* Contenedor de las imágenes del portfolio */
+.portfolio-container {
+    display: grid; /* Usar Grid Layout */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    grid-gap: 20px; /* Espacio entre las imágenes */
+}
+
+/* Estilo para cada imagen del portfolio */
+.portfolio-item img {
+    width: 50%; /* Que las imágenes ocupen todo el contenedor */
+    height: auto; /* Mantener la relación de aspecto */
+}
+
+
+#proposito {
+    background:#284092;
+    color: white;
+}
+
+#contacto {
+    background-color: #6DA68C;
+    color: white;
+}
+
+h1, h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="tel"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 7px 20px;
+    background-color: white;
+    color: #6DA68C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #6DA68C;
+}
+
+/* Estilos para las imágenes en la sección "Nuestro Propósito" */
+.image-grid {
+    display: flex;
+    gap: 65px;
+    justify-content: space-around; /* Espacio entre las imágenes */
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.image-item {
+    max-width: 200px; /* Ajustar el ancho máximo de cada imagen y descripción */
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 10px; /* Esquinas redondeadas opcionales */
+}
+
+.image-item h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.image-item p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+
